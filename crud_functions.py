@@ -35,32 +35,7 @@ def get_all_products():
     connection.commit()
     prod = cursor.fetchall()
     connection.commit()
-    connection.close()
-    # for i in prod:
-    # id_, title, description, price = prod
-    # #print(f"ID: {id_} | Наименование: {title} | Описание: {description} | Цена: {price}")
+    connection.close()  
     return prod
+ 
 
-
-
-    # id
-    # title
-    # description
-    # price
-    # count = cursor.execute('SELECT COUNT(*) FROM Products')
-
-    #prod = cursor.fetchall()
-    # return  cursor.fetchall()
-    # all_products = cursor.fetchall()
-    # for product in all_products:
-    #return prod
-    #id, title, description, price = [prod]
-#     #get_all_products()
-#     for i in range(len(prod)):
-#
-
-
-#initiate_db()
-#insert_products()
-get_all_products()
-# if __name__ == "__main__":
